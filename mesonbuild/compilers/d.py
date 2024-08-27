@@ -547,7 +547,7 @@ class DCompiler(Compiler):
         if self.info.is_windows():
             if self.arch == 'x86_64':
                 return ['-m64']
-            return ['-m32']
+            # return ['-m32']
         return []
 
     def get_crt_compile_args(self, crt_val: str, buildtype: str) -> T.List[str]:
@@ -829,7 +829,7 @@ class DmdDCompiler(DmdLikeCompilerMixin, DCompiler):
                 return ['-m64']
             elif self.arch == 'x86_mscoff':
                 return ['-m32mscoff']
-            return ['-m32']
+            # return ['-m32']
         return []
 
     def get_crt_compile_args(self, crt_val: str, buildtype: str) -> T.List[str]:

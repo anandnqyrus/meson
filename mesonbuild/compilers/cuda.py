@@ -88,7 +88,7 @@ class CudaCompiler(Compiler):
         '--expt-relaxed-constexpr',             '-expt-relaxed-constexpr',      # 4.2.3.16
         '--extended-lambda',                    '-extended-lambda',             # 4.2.3.17
         '--expt-extended-lambda',               '-expt-extended-lambda',        # 4.2.3.18
-        '--m32',                                '-m32',                         # 4.2.3.20
+        # '--m32',                                '-m32',                         # 4.2.3.20
         '--m64',                                '-m64',                         # 4.2.3.21
         '--forward-unknown-to-host-compiler',   '-forward-unknown-to-host-compiler', # 4.2.5.1
         '--forward-unknown-to-host-linker',     '-forward-unknown-to-host-linker',   # 4.2.5.2
